@@ -2,6 +2,13 @@
 Cria animação para stream com obs studio
 esse aplicação é semalhante ao Holyrics
 
+para mostrar a bíblia, impoprt em Browser marque local file, aponte para o ariquivo biblia.html
+defina width=380 e Height=500
+
+ative os chebox para abiliatar animação
+
+para aviso
+width=900 e Height=140
 
 ## dependencia 
 * python3
