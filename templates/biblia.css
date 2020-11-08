@@ -1,0 +1,45 @@
+@keyframes go-back {
+
+    0% {
+        transform: translateX(-900px) scale(0.2);
+    }
+    80% {
+        transform: translateX(20px) scale(1);
+    }
+    100% {
+
+        transform: translateX(0px);
+    }
+}
+h1.livro {
+animation: go-back 4s;
+font-size: 40px;
+text-align: center;
+ margin-top: 35px;
+ }
+h2.texto{
+    animation: go-back 4s;
+    position: relative;
+    margin-top: -10px;
+    text-align: left;
+    margin-left: 46px;
+    margin-right: 44px;
+    font-size: 28px;
+}
+div.box{
+animation: go-back 3s;
+transition: transform 4s;
+transform: translateX(0px) scale(1);
+position: absolute;
+background-image: url("per.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+height: 550px;
+}
+
+.box:hover {
+display: block;
+transform: translateX(100px) scale(1.2);
+
+}

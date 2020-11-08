@@ -1,0 +1,51 @@
+@keyframes go-fundo {
+    0% {
+        transform: translateX(-800px);
+
+    }
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+@keyframes go-text {
+    0% {
+        transform: translateX(-800px);
+    }
+    60% {
+        transform: translateX(50px) ;
+    }
+
+    100% {
+        transform: translateX(0px) scale(1);
+    }
+}
+h1.cargo {
+animation: go-text 3s;
+font-size: 38px;
+color: blue;
+text-align: center;
+ }
+h2.people_name{
+    animation: go-text 3s;
+    position: relative;
+    align: center;
+    text-align: center;
+    color: blue;
+    margin-left: 140px;
+    margin-right: 140px;
+    font-size: 38px;
+}
+div.box{
+
+line-height: 0.3;
+animation: go-fundo 2s;
+transition: transform 4s;
+transform: translateX(0px) scale(1);
+position: absolute;
+align:center;
+background-color: rgba(255, 255, 255, 0.9) ;
+background-repeat: no-repeat;
+border-radius: 10px;
+border-style:solid;;
+}
+
