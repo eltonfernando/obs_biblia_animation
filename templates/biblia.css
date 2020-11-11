@@ -12,13 +12,13 @@
     }
 }
 h1.livro {
-animation: go-back 4s;
+animation: go-back 3s;
 font-size: 40px;
 text-align: center;
  margin-top: 35px;
  }
 h2.texto{
-    animation: go-back 4s;
+    animation: go-back 3s;
     position: relative;
     margin-top: -10px;
     text-align: left;
@@ -27,7 +27,7 @@ h2.texto{
     font-size: 28px;
 }
 div.box{
-animation: go-back 3s;
+animation: go-back 2s;
 transition: transform 4s;
 transform: translateX(0px) scale(1);
 position: absolute;

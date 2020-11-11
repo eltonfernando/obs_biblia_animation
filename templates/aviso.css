@@ -24,16 +24,22 @@ animation: go-text 3s;
 font-size: 38px;
 color: blue;
 text-align: center;
+ position: relative;
+    margin-top: -10px;
+    margin-left: 280px;
+    margin-right: 400px;
+    margin-bottom: 200px;
  }
 h2.people_name{
     animation: go-text 3s;
     position: relative;
-    align: center;
     text-align: center;
     color: blue;
-    margin-left: 140px;
-    margin-right: 140px;
-    font-size: 38px;
+    margin-top: 380px;
+    margin-left: 280px;
+    margin-right: 400px;
+    font-size: 48px;
+
 }
 div.box{
 
@@ -42,10 +48,12 @@ animation: go-fundo 2s;
 transition: transform 4s;
 transform: translateX(0px) scale(1);
 position: absolute;
-align:center;
-background-color: rgba(255, 255, 255, 0.9) ;
+background-size: 820px 530px;
+background-image: url("aviso_fundo.png");
 background-repeat: no-repeat;
-border-radius: 10px;
-border-style:solid;;
+
+
+
+
 }
 
