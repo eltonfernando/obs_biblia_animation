@@ -8,7 +8,7 @@ defina width=380 e Height=500
 ative os chebox para abiliatar animação
 
 para aviso
-width=900 e Height=140
+width=900 e Height=520
 
 ## dependencia 
 * python3
