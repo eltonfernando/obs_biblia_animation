@@ -24,7 +24,7 @@ h2.texto{
     margin-left: 2%;
     margin-right: 2%;
     font-size: 35px;
-    background-color: rgba(72,93,140,0.2);
+    background-color: rgba(72,93,140,1);
 }
 div.box{
 animation: go-back 1s;
