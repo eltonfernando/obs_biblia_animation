@@ -1,0 +1,48 @@
+@keyframes go-back {
+
+    0% {
+        transform: translateY(200px) scale(0.2);
+    }
+    100% {
+
+        transform: translateY(0px) scale(1);
+    }
+}
+h1.livro {
+animation: go-back 2s;
+font-size: 50px;
+text-align: center;
+ margin-top: 35px;
+ background-color: rgba(22,43,190,0.5);
+ }
+h2.texto{
+    animation: go-back 2s;
+    margin-bottom: 2%;
+    position: relative;
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 35px;
+    background-color: rgba(72,93,140,0.2);
+}
+div.box{
+animation: go-back 1s;
+margin-bottom: 0px;
+position: absolute;
+background-color: rgba(22,43,90,0.5);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+bottom:0;
+height: auto;
+width: auto;
+
+
+}
+
+.box:hover {
+display: block;
+transform: translateX(100px) scale(1.2);
+
+}
