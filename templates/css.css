@@ -11,9 +11,10 @@
 h1.livro {
 animation: go-back 2s;
 font-size: 50px;
+color: white;
 text-align: center;
  margin-top: 35px;
- background-color: rgba(22,43,190,0.5);
+ background-color: rgba(10,10,10,0.9);
  }
 h2.texto{
     animation: go-back 2s;
@@ -24,13 +25,14 @@ h2.texto{
     margin-left: 2%;
     margin-right: 2%;
     font-size: 35px;
-    background-color: rgba(72,93,140,1);
+    color: white;
+    background-color: rgba(20,20,20,1);
 }
 div.box{
 animation: go-back 1s;
 margin-bottom: 0px;
 position: absolute;
-background-color: rgba(22,43,90,0.5);
+background-color: rgba(30,30,30,0.7);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
