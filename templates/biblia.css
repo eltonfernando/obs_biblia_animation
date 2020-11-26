@@ -1,41 +1,46 @@
 @keyframes go-back {
 
     0% {
-        transform: translateX(-900px) scale(0.2);
-    }
-    80% {
-        transform: translateX(20px) scale(1);
+        transform: translateY(200px) scale(0.2);
     }
     100% {
 
-        transform: translateX(0px);
+        transform: translateY(0px) scale(1);
     }
 }
 h1.livro {
-animation: go-back 3s;
-font-size: 40px;
+animation: go-back 2s;
+font-size: 50px;
+color: white;
 text-align: center;
  margin-top: 35px;
+ background-color: rgba(10,10,10,0.9);
  }
 h2.texto{
-    animation: go-back 3s;
+    animation: go-back 2s;
+    margin-bottom: 2%;
     position: relative;
-    margin-top: -10px;
+    margin-top: 0px;
     text-align: left;
-    margin-left: 46px;
-    margin-right: 44px;
-    font-size: 28px;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 35px;
+    color: white;
+    background-color: rgba(20,20,20,1);
 }
 div.box{
-animation: go-back 2s;
-transition: transform 4s;
-transform: translateX(0px) scale(1);
+animation: go-back 1s;
+margin-bottom: 0px;
 position: absolute;
-background-image: url("per.png");
+background-color: rgba(30,30,30,0.7);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
-height: 550px;
+bottom:0;
+height: auto;
+width: auto;
+
+
 }
 
 .box:hover {

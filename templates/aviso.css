@@ -22,7 +22,7 @@
 h1.cargo {
 animation: go-text 3s;
 font-size: 38px;
-color: blue;
+color: rgba(20,86,123,1);
 text-align: center;
  position: relative;
     margin-top: -10px;
@@ -34,7 +34,7 @@ h2.people_name{
     animation: go-text 3s;
     position: relative;
     text-align: center;
-    color: blue;
+    color: rgba(20,86,123,1);
     margin-top: 380px;
     margin-left: 280px;
     margin-right: 400px;
@@ -51,9 +51,6 @@ position: absolute;
 background-size: 820px 530px;
 background-image: url("aviso_fundo.png");
 background-repeat: no-repeat;
-
-
-
 
 }
 

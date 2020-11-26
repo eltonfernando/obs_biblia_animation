@@ -65,15 +65,23 @@ class Main(QMainWindow,Historico):
         self.delete_cargo(self.comboBox_cargo.currentText())
         self.start_combox_cargo()
 
+
     @pyqtSlot()
     def on_pushButton_save_cargo_clicked(self):
-        self.set_cargo_apresentador(self.comboBox_cargo.currentText())
+        cargo=self.comboBox_cargo.currentText()
+        self.set_cargo_apresentador(cargo)
         self.start_combox_cargo()
+        idex = self.comboBox_cargo.findText(cargo)
+        self.comboBox_cargo.setCurrentIndex(idex)
 
     @pyqtSlot()
     def on_pushButton_salve_people_clicked(self):
-        self.set_name_apresentador(self.comboBox_name_apresentador.currentText())
+        name=self.comboBox_name_apresentador.currentText()
+        self.set_name_apresentador(name)
         self.start_combox_name_apresentador()
+        idex=self.comboBox_name_apresentador.findText(name)
+        self.comboBox_name_apresentador.setCurrentIndex(idex)
+
 
 
 if __name__=="__main__":

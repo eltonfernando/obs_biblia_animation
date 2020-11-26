@@ -23,6 +23,8 @@ class Biblia(QThread):
         self.text_log.emit(self.get_text_versiculo())
 
     def get_html(self):
+        if self.livro=="Daniel":
+            self.livro="dn"
         url = self.url + self.livro + "/" + self.capitulo + "/" + self.versiculo
         page_html = requests.get(url).content
         return page_html
@@ -59,9 +61,9 @@ class Biblia(QThread):
 
 if __name__=="__main__":
     ob=Biblia()
-    ob.set_livro("1 Samuel")
-    ob.set_capitulo(3)
-    ob.set_versiculo(16)
+    ob.set_livro("dn")
+    ob.set_capitulo(1)
+    ob.set_versiculo(1)
     ob.start()
     while ob.isRunning():
         pass
