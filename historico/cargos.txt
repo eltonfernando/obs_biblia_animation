@@ -1,8 +1,4 @@
 Pregador
-Orador
-Pastor
 Louvor
+Oração
 Ancião
-Ancião
-test
-Ancião2
