@@ -25,7 +25,9 @@ class Biblia(QThread):
     def get_html(self):
         if self.livro=="Daniel":
             self.livro="dn"
+
         url = self.url + self.livro + "/" + self.capitulo + "/" + self.versiculo
+        print(url)
         page_html = requests.get(url).content
         return page_html
 
@@ -70,4 +72,4 @@ if __name__=="__main__":
 
     print(ob.get_text_versiculo())
     print(ob.get_text_livro())
-    ob.update_template()
+#    ob.update_template()

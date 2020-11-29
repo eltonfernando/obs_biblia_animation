@@ -1,7 +1,7 @@
 @keyframes go-back {
 
     0% {
-        transform: translateY(200px) scale(0.2);
+        transform: translateY(400px) scale(0.1);
     }
     100% {
 
@@ -36,15 +36,9 @@ background-color: rgba(30,30,30,0.7);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
-bottom:0;
+bottom: 0px;
 height: auto;
-width: auto;
-
-
+width: 100%;
 }
 
-.box:hover {
-display: block;
-transform: translateX(100px) scale(1.2);
 
-}
