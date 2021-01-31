@@ -11,7 +11,7 @@ para aviso
 width=900 e Height=520
 
 ## dependencia 
-* python3
+* python3fdasdf
 
 * beautifulsoup4
 
