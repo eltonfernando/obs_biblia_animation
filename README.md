@@ -12,8 +12,7 @@ width=900 e Height=520
 
 ## dependencia 
 * python3
-* PyQt5
-* requests
+
 * beautifulsoup4
 
 ## install mac
