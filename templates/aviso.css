@@ -25,32 +25,28 @@ font-size: 38px;
 color: rgba(20,86,123,1);
 text-align: center;
  position: relative;
-    margin-top: -10px;
-    margin-left: 280px;
-    margin-right: 400px;
-    margin-bottom: 200px;
+ margin-top: -45px;
+
  }
 h2.people_name{
     animation: go-text 3s;
     position: relative;
     text-align: center;
     color: rgba(20,86,123,1);
-    margin-top: 380px;
-    margin-left: 280px;
-    margin-right: 400px;
-    font-size: 48px;
+    margin-top: 400px;
+    font-size: 52px;
 
 }
 div.box{
-
-line-height: 0.3;
-animation: go-fundo 2s;
-transition: transform 4s;
-transform: translateX(0px) scale(1);
-position: absolute;
-background-size: 820px 530px;
 background-image: url("aviso_fundo.png");
 background-repeat: no-repeat;
+background-size: 100% 100%;
+animation: go-fundo 2s;
+transition: transform 4s;
+height:100%;
+width:100%;
+margin-left: 30px;
+position: absolute;
 
 }
 

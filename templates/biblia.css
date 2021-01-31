@@ -1,7 +1,7 @@
 @keyframes go-back {
 
     0% {
-        transform: translateY(400px) scale(0.1);
+        transform: translateY(600px) scale(0.1);
     }
     100% {
 
@@ -29,7 +29,7 @@ h2.texto{
     background-color: rgba(20,20,20,1);
 }
 div.box{
-animation: go-back 1s;
+animation: go-back 2s;
 margin-bottom: 0px;
 position: absolute;
 background-color: rgba(30,30,30,0.7);

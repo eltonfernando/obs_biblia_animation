@@ -19,12 +19,12 @@ Jó
 Salmos
 Provérbios
 Eclesiastes
-Cânticos dos Cânticos
+Cânticos
 Isaías
 Jeremias
 Lamentações
 Ezequiel
-Daniel
+dn
 Oseias
 Joel
 Amós
@@ -35,7 +35,8 @@ Naum
 Habacuque
 Sofonias
 Ageu
-Zacarias Malaquias
+Zacarias
+Malaquias
 Mateus
 Marcos
 Lucas
@@ -53,7 +54,7 @@ Colossenses
 1 Timóteo
 2 Timóteo
 Tito
-Filémon
+fm
 Hebreus
 Tiago
 1 Pedro

@@ -1,5 +1,5 @@
 """
-Busca verso biblico
+Busca verso biblico Obsolteto
 """
 import requests
 from PyQt5.QtCore import QThread, pyqtSignal

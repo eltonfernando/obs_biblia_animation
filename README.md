@@ -1,25 +1,43 @@
 # obs_studio_animator
-Cria animação para stream com obs studio
-esse aplicação é semalhante ao Holyrics
+Esse program foi criado com objetivo de auxilar a transmisão de
+programação da igreja usando OBS.
 
-para mostrar a bíblia, impoprt em Browser marque local file, aponte para o ariquivo biblia.html
-defina width=380 e Height=500
+A aplicação permite inserir de forma rápida e simples os textos bíbilos e criar aviso com nome do orador
 
-ative os chebox para abiliatar animação
+![](./doc/obs_animator.png)
 
-para aviso
-width=900 e Height=520
+ # Instalação
+Atualmento fornecemos versões compilada para Windows.
+https://drive.google.com/drive/folders/1lFkMeV0yZtnVIvgpDtntJxD01ia-ABn6?usp=sharing
+ 
+
+# Configuração
+No obs devemos importar como uma página de internet local
+![](./doc/import.png)
+
+### Bíblia
+* importar em Browser marque local file, aponte para o ariquivo biblia.html
+* defina largura=1080 e altura=450. 
+* Marcar Atulaizar navegador quando tornar-se ativa
+
+
+### para aviso
+* importar em Browser marque local file, aponte para o ariquivo aviso.html
+* defina largura=920 e altura=580. 
+* Marcar Atulaizar navegador quando tornar-se ativa
+
+
+# Informações para desenvolvedor.
 
 ## dependencia 
-* python3fdasdf
-
+* python3
+* PyQt5
 * beautifulsoup4
 
 ## install mac
 
 brew install python3
 pip3 install PyQt5
-pip3 install requests
 pip3 install beautifulsoup4
 
 
@@ -27,7 +45,6 @@ pip3 install beautifulsoup4
 
 sudo apt install python3
 pip3 install PyQt5
-pip3 install requests
 pip3 install beautifulsoup4
 
 ## Windows

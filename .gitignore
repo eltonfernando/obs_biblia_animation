@@ -5,7 +5,9 @@ __pycache__/
 
 # C extensions
 *.so
-
+.git
+.idea
+video_animator
 # Distribution / packaging
 .Python
 build/
