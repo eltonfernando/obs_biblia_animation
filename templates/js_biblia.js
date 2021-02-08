@@ -1,6 +1,5 @@
 window.onload=function () {
 
-
 }
 
 function readTextFile(file,id)

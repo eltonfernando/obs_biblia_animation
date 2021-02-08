@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Controle de transiçao</string>
+   <string>Controle de transição</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="horizontalLayoutWidget">
@@ -106,7 +106,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Apresentaçao</string>
+     <string>Apresentação</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -228,7 +228,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Biblia</string>
+     <string>Bíblia</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>

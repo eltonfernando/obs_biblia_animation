@@ -19,24 +19,6 @@
         transform: translateX(0px) scale(1);
     }
 }
-h1.cargo {
-animation: go-text 3s;
-font-size: 38px;
-color: rgba(20,86,123,1);
-text-align: center;
- position: relative;
- margin-top: -45px;
-
- }
-h2.people_name{
-    animation: go-text 3s;
-    position: relative;
-    text-align: center;
-    color: rgba(20,86,123,1);
-    margin-top: 400px;
-    font-size: 52px;
-
-}
 div.box{
 background-image: url("aviso_fundo.png");
 background-repeat: no-repeat;
@@ -49,4 +31,24 @@ margin-left: 30px;
 position: absolute;
 
 }
+
+h1.cargo {
+animation: go-text 3s;
+font-size: 38px;
+color: rgba(20,86,123,1);
+text-align: center;
+ position: relative;
+ margin-top: -40px;
+
+ }
+h2.people_name{
+    animation: go-text 3s;
+    position: relative;
+    text-align: center;
+    color: rgba(20,86,123,1);
+    margin-top: 425px;
+    font-size: 52px;
+
+}
+
 

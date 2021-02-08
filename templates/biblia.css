@@ -1,5 +1,4 @@
 @keyframes go-back {
-
     0% {
         transform: translateY(600px) scale(0.1);
     }
