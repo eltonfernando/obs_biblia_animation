@@ -121,7 +121,7 @@ class Connect:
             self.conn.commit()
             self.close_db()
         except sqlite3.OperationalError as e:
-            with open("loger/"+self.current_name_setup+"_log.txt","a") as flog:
+            with open("_log.txt","a") as flog:
                 flog.write("*************ERROR BANCO UPDATE******************\n")
                 flog.write("name"+self.db_name+".db\n")
                 flog.write("data "+str(datetime.datetime.now())+"\n")

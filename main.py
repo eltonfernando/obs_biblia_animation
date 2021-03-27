@@ -11,14 +11,15 @@ from PyQt5.QtCore import pyqtSlot
 import data_base
 from bs4 import BeautifulSoup
 from memoria import Historico
+import os
 class Main(QMainWindow):
     def __init__(self):
         super(Main, self).__init__()
         loadUi("from.ui",self)
         self.historico=Historico()
-        self.names_livros_combo = open("historico/livro_combo.txt","r",encoding="utf-8").read().strip().split("\n")
-        self.names_livros_print = open("historico/li.txt","r",encoding="utf-8").read().strip().split("\n")
-        self.names_livros_tb = open("historico/livros.txt","r",encoding="utf-8").read().strip().split("\n")
+        self.names_livros_combo = open(os.path.join("historico","livro_combo.txt"),"r",encoding="utf-8").read().strip().split("\n")
+        self.names_livros_print = open(os.path.join("historico","livro_ortografia_correta.txt"),"r",encoding="utf-8").read().strip().split("\n")
+        self.names_livros_tb = open(os.path.join("historico","livros_db.txt"),"r",encoding="utf-8").read().strip().split("\n")
         self.start_combox_name_apresentador()
         self.start_combox_cargo()
 
@@ -57,9 +58,9 @@ class Main(QMainWindow):
             text_livro=self.names_livros_print[index_livro]+" "+str(lista_vercisulo[0][1])+" : "+str(lista_vercisulo[0][2])
             self.textEdit_saida.setText(text_livro+"\n"+str(lista_vercisulo[0][3]))
             self.update_template_html(text_livro,lista_vercisulo[0][3])
-            with open("templates/livro.txt","w",encoding="utf-8") as file:
+            with open(os.path.join("templates","livro.txt"),"w",encoding="utf-8") as file:
                 file.write(text_livro)
-            with open("templates/versiculo.txt","w",encoding="utf-8") as file:
+            with open(os.path.join("templates","versiculo.txt"),"w",encoding="utf-8") as file:
                 file.write(lista_vercisulo[0][3])
     @pyqtSlot()
     def on_pushButton_criar_apresentador_clicked(self):
@@ -93,13 +94,13 @@ class Main(QMainWindow):
         self.comboBox_name_apresentador.setCurrentIndex(idex)
 
     def update_template_html(self,livro,texto):
-        with open("templates/biblia.html", "r",encoding="utf-8") as inf:
+        with open(os.path.join("templates","biblia.html"), "r",encoding="utf-8") as inf:
             txt = inf.read()
         inport_soup = BeautifulSoup(txt, features="html.parser")
 
         inport_soup.h1.string = livro
         inport_soup.h2.string = texto
-        with open("templates/biblia.html", 'w',encoding="utf-8") as file:
+        with open(os.path.join("templates","biblia.html"), 'w',encoding="utf-8") as file:
             file.write(str(inport_soup))
 
 if __name__=="__main__":

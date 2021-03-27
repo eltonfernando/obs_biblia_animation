@@ -24,7 +24,7 @@ Isaías
 Jeremias
 Lamentações
 Ezequiel
-dn
+Dâniel
 Oseias
 Joel
 Amós
@@ -54,7 +54,7 @@ Colossenses
 1 Timóteo
 2 Timóteo
 Tito
-fm
+Filemon
 Hebreus
 Tiago
 1 Pedro
