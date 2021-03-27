@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Controle de transição</string>
+   <string>Biblia para OBS</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="horizontalLayoutWidget">
@@ -84,10 +84,10 @@
    <widget class="QTextEdit" name="textEdit_saida">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>50</x>
       <y>130</y>
-      <width>371</width>
-      <height>111</height>
+      <width>421</width>
+      <height>121</height>
      </rect>
     </property>
    </widget>
@@ -95,7 +95,7 @@
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>240</y>
+      <y>250</y>
       <width>171</width>
       <height>61</height>
      </rect>
@@ -237,7 +237,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>150</x>
       <y>480</y>
       <width>221</width>
       <height>20</height>

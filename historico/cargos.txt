@@ -2,3 +2,4 @@ Pregador
 Oração
 Ancião
 Louvor
+orações
