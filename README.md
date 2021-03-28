@@ -16,13 +16,13 @@ No obs devemos importar como uma página de internet local
 ![](./doc/import.png)
 
 ### Bíblia
-* importar em Browser marque local file, aponte para o ariquivo biblia.html (dentro da pasta templates)
+* importar navegador (Browser) marque local file, aponte para o ariquivo biblia.html (dentro da pasta templates)
 * defina largura=1080 e altura=450. 
 * Marcar Atulaizar navegador quando tornar-se ativa
 
 
 ### para aviso
-* importar em Browser marque local file, aponte para o ariquivo aviso.html (dentro da pasta templates)
+* importar navegador (Browser) marque local file, aponte para o ariquivo aviso.html (dentro da pasta templates)
 * defina largura=920 e altura=580. 
 * Marcar Atulaizar navegador quando tornar-se ativa
 
