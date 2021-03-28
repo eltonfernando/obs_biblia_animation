@@ -7,7 +7,7 @@ A aplicação permite inserir de forma rápida e simples os textos bíbilos e cr
 ![](./doc/obs_animator.png)
 
  # Instalação
-Atualmento fornecemos versões compilada para Windows.
+Atualmente fornecemos versões compilada para Windows.
 https://drive.google.com/drive/folders/1lFkMeV0yZtnVIvgpDtntJxD01ia-ABn6?usp=sharing
  
 
