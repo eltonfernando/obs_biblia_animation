@@ -1,9 +1,46 @@
+div.box{
+    position:relative;
+}
+div.box{
+background-image: url("aviso_fundo.png");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+animation: go-fundo 2s;
+transition: transform 4s;
+height:100%;
+width:100%;
+margin-left: 30px;
+position: absolute;
+
+}
+
+
+h1.cargo {
+
+font-size: 38px;
+color: rgba(20,86,123,1);
+text-align: center;
+ position: relative;
+ margin-top: -40px;
+animation: go-text 3s;
+ }
+h2.people_name{
+
+    position: relative;
+    text-align: center;
+    color: rgba(20,86,123,1);
+    margin-top: 425px;
+    font-size: 52px;
+animation: go-text 3s;
+}
+
+
 @keyframes go-fundo {
-    0% {
+    from{
         transform: translateX(-800px);
 
     }
-    100% {
+    end{
         transform: translateX(0px) scale(1);
     }
 }
@@ -19,36 +56,3 @@
         transform: translateX(0px) scale(1);
     }
 }
-div.box{
-background-image: url("aviso_fundo.png");
-background-repeat: no-repeat;
-background-size: 100% 100%;
-animation: go-fundo 2s;
-transition: transform 4s;
-height:100%;
-width:100%;
-margin-left: 30px;
-position: absolute;
-
-}
-
-h1.cargo {
-animation: go-text 3s;
-font-size: 38px;
-color: rgba(20,86,123,1);
-text-align: center;
- position: relative;
- margin-top: -40px;
-
- }
-h2.people_name{
-    animation: go-text 3s;
-    position: relative;
-    text-align: center;
-    color: rgba(20,86,123,1);
-    margin-top: 425px;
-    font-size: 52px;
-
-}
-
-

@@ -1,12 +1,4 @@
-@keyframes go-back {
-    0% {
-        transform: translateY(600px) scale(0.1);
-    }
-    100% {
 
-        transform: translateY(0px) scale(1);
-    }
-}
 h1.livro {
 animation: go-back 2s;
 font-size: 50px;
@@ -28,7 +20,6 @@ h2.texto{
     background-color: rgba(20,20,20,1);
 }
 div.box{
-animation: go-back 2s;
 margin-bottom: 0px;
 position: absolute;
 background-color: rgba(30,30,30,0.7);
@@ -38,6 +29,15 @@ background-position: center;
 bottom: 0px;
 height: auto;
 width: 100%;
+animation: go-back 2s;
 }
 
+@keyframes go-back {
+    0% {
+        transform: translateY(600px) scale(0.1);
+    }
+    100% {
 
+        transform: translateY(0px) scale(1);
+    }
+}
