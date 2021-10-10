@@ -23,7 +23,7 @@ No obs devemos importar como uma página de internet local
 
 ### para aviso
 * importar navegador (Browser) marque local file, aponte para o ariquivo aviso.html (dentro da pasta templates)
-* defina largura=920 e altura=610. 
+* defina largura=1200 e altura=300. 
 * Marcar Atulaizar navegador quando tornar-se ativa
 
 

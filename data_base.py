@@ -15,7 +15,13 @@ import datetime
     tempo de leitura 5 ms e acrescenta mas 5 ms a cada mil linhas adicionada
 """
 
+import logging
 
+logging.basicConfig(filename="loger.log",level=logging.CRITICAL,format='%(levelname)s:'
+                                                                   ' %(filename)s: '
+                                                                   '%(funcName)s:'
+                                                                   '%(asctime)s:'
+                                                                   '%(message)s')
 class Connect:
 
     def __init__(self,tabela="gn"):
@@ -38,12 +44,10 @@ class Connect:
             #print(self.data)
         except sqlite3.Error as e:
            # print("Erro ao abrir banco.")
-            with open("_log.txt","a") as flog:
-                flog.write("*************ERROR OPEN BANCO******************\n")
-                flog.write("name"+self.db_name+".db\n")
-                flog.write("data "+str(datetime.datetime.now())+"\n")
-                flog.write("log "+str(e)+"\n")
-            #raise("erro ao abrir banco de dados "+db_name)
+           message=f'ERROR OPEN BANCO\n' \
+                   f'name banco {self.db_name}.db \n' \
+                   f'erro {e}'
+           logging.critical(message)
 
     def get_all_data(self):
         """
@@ -71,13 +75,10 @@ class Connect:
             data=self.cursor.fetchall()
 
         except sqlite3.OperationalError as e:
-
-            with open("_log.txt","a") as flog:
-                flog.write("*************ERROR BANCO SELECT WERE DATA******************\n")
-                flog.write("name"+self.db_name+".db\n")
-                flog.write("tabela "+self.tabela+"\n")
-                flog.write("data "+str(datetime.datetime.now())+"\n")
-                flog.write(str(e)+"\n\n\n")
+            message = f'ERROR BANCO SELECT WERE DATA\n' \
+                      f'name banco {self.db_name}.db \n' \
+                      f'erro {e}'
+            logging.critical(message)
         self.close_db()
         return data
 
@@ -98,12 +99,10 @@ class Connect:
             #print('Salve no banco .')
 
         except sqlite3.OperationalError as e:
-            with open("_log.txt","a") as flog:
-                flog.write("*************ERROR BANCO INSERT******************\n")
-                flog.write("name "+self.db_name+".db\n")
-                flog.write("data "+str(datetime.datetime.now())+"\n")
-                flog.write("tabela " + self.tabela)
-                flog.write(str(e)+"\n\n\n")
+            message = f'ERROR BANCO INSERT\n' \
+                      f'name banco {self.db_name}.db \n' \
+                      f'erro {e}'
+            logging.critical(message)
         self.close_db()
 
     def update(self,id,colunn,valor):
@@ -121,12 +120,10 @@ class Connect:
             self.conn.commit()
             self.close_db()
         except sqlite3.OperationalError as e:
-            with open("_log.txt","a") as flog:
-                flog.write("*************ERROR BANCO UPDATE******************\n")
-                flog.write("name"+self.db_name+".db\n")
-                flog.write("data "+str(datetime.datetime.now())+"\n")
-                flog.write("tabela " + self.tabela)
-                flog.write(str(e)+"\n\n\n")
+            message = f'ERROR BANCO UPDATE\n' \
+                      f'name banco {self.db_name}.db \n' \
+                      f'erro {e}'
+            logging.critical(message)
         self.close_db()
 
     def delete(self,id):
