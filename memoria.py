@@ -9,7 +9,7 @@ class Historico:
         livros =open(os.path.join(self.path,"livro_ortografia_correta.txt"),"r",encoding="utf-8").read().strip().split("\n")
         return livros
     def get_cargo_apresentador(self):
-        cargos = open(os.path.join(self.path , "cargos.txt"),"r",encoding="utf-8").read().strip().split("\n")
+        cargos = open(os.path.join(self.path , "cargos.txt"),"r").read().strip().split("\n")
         return cargos
     def get_name_apresentador(self):
         people_names = open(os.path.join(self.path , "people_names.txt"),"r",encoding="utf-8").read().strip().split("\n")
@@ -34,10 +34,13 @@ class Historico:
                 info.write(c+"\n")
 
     def delete_cargo(self,cargo):
-        cargos = open(os.path.join(self.path, "cargos.txt"),"r",encoding="utf-8").read().strip().split("\n")
+        cargos=[]
+        with open(os.path.join(self.path, "cargos.txt"),"r",encoding="utf-8") as file:
+            cargos=file.read().strip().split("\n")
+
         if cargo in cargos:
             del cargos[cargos.index(cargo)]
-        with open(os.path.join(self.path, "cargos.txt"),"w") as info:
+        with open(os.path.join(self.path, "cargos.txt"),"w",encoding="utf-8") as info:
             for c in cargos:
                 info.write(c+"\n")
 
