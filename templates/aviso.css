@@ -2,42 +2,38 @@ div.box{
     position:relative;
 }
 div.box{
-background-image: url("aviso_fundo.png");
+background-image: url("fundo.png");
 background-repeat: no-repeat;
 background-size: 100% 100%;
-animation: go-fundo 2s;
-transition: transform 4s;
+animation: go-text 9s;
 height:100%;
 width:100%;
-margin-left: 30px;
+margin-left: -1200px;
 position: absolute;
 
 }
 
 
 h1.cargo {
-
-font-size: 38px;
-color: rgba(20,86,123,1);
-text-align: center;
- position: relative;
- margin-top: -40px;
-animation: go-text 3s;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    margin-top: -55px;
+    font-size: 45px;
+    margin-left: -2300px;
+    animation: go-text 10s;
  }
 h2.people_name{
-
-    position: relative;
     text-align: center;
-    color: rgba(20,86,123,1);
-    margin-top: 425px;
-    font-size: 52px;
-animation: go-text 3s;
+    color: rgba(255,255,255,1);
+    margin-top: 80px;
+    margin-left: -2300px;
+    font-size: 70px;
+    animation: go-text 10s;
 }
-
 
 @keyframes go-fundo {
     from{
-        transform: translateX(-800px);
+        transform: translateX(-1200px);
 
     }
     end{
@@ -46,11 +42,10 @@ animation: go-text 3s;
 }
 @keyframes go-text {
     0% {
-        transform: translateX(-800px);
+        transform: translateX(0px);
     }
-    60% {
-        transform: translateX(50px) ;
-    }
+    30%,70% {
+        transform: translateX(1200px) ;
 
     100% {
         transform: translateX(0px) scale(1);
