@@ -18,7 +18,7 @@ No obs devemos importar como uma página de internet local
 ### Bíblia
 * importar navegador (Browser) marque local file, aponte para o ariquivo biblia.html (dentro da pasta templates)
 * defina largura=1080 e altura=450. 
-* Marcar Atulaizar navegador quando tornar-se ativa
+
 
 
 ### para aviso
@@ -35,17 +35,18 @@ No obs devemos importar como uma página de internet local
 * beautifulsoup4
 
 ## install mac
-
+```
 brew install python3
 pip3 install PyQt5
 pip3 install beautifulsoup4
-
+```
 
 ## install linux (Ubuntu)
-
+```
 sudo apt install python3
 pip3 install PyQt5
 pip3 install beautifulsoup4
+```
 
 ## Windows
 Presica instalar manualmento o python3, o pip3 vem junto.
