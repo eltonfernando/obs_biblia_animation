@@ -12,18 +12,16 @@ import data_base
 from bs4 import BeautifulSoup
 from memoria import Historico
 import os
+from core.biblia_const import LIVRO_COMBO,LIVRO_DB,LIVRO_PT
 class Main(QMainWindow):
     def __init__(self):
         super(Main, self).__init__()
         loadUi("from.ui",self)
         self.historico=Historico()
-        self.names_livros_combo = open(os.path.join("historico","livro_combo.txt"),"r",encoding="utf-8").read().strip().split("\n")
-        self.names_livros_print = open(os.path.join("historico","livro_ortografia_correta.txt"),"r",encoding="utf-8").read().strip().split("\n")
-        self.names_livros_tb = open(os.path.join("historico","livros_db.txt"),"r",encoding="utf-8").read().strip().split("\n")
         self.start_combox_name_apresentador()
         self.start_combox_cargo()
 
-        for name_livro in self.names_livros_combo:
+        for name_livro in LIVRO_COMBO:
             self.comboBox_livro.addItem(name_livro)
 
     def start_combox_name_apresentador(self):
@@ -48,14 +46,14 @@ class Main(QMainWindow):
         versiculo=self.spinBox_versiculo.value()
         capitulo=self.spinBox_capitulo.value()
 
-        db=data_base.Connect(self.names_livros_tb[index_livro])
+        db=data_base.Connect(LIVRO_DB[index_livro])
         lista_vercisulo=db.get_versiculo(capitulo,versiculo)
         print(lista_vercisulo)
-        print(self.names_livros_print[index_livro],capitulo,versiculo)
+        print(LIVRO_PT[index_livro], capitulo, versiculo)
         if not lista_vercisulo:
             self.textEdit_saida.setText("Versiculo não existe")
         else:
-            text_livro=self.names_livros_print[index_livro]+" "+str(lista_vercisulo[0][1])+" : "+str(lista_vercisulo[0][2])
+            text_livro= LIVRO_PT[index_livro] + " " + str(lista_vercisulo[0][1]) + " : " + str(lista_vercisulo[0][2])
             self.textEdit_saida.setText(text_livro+"\n"+str(lista_vercisulo[0][3]))
             self.update_template_html(text_livro,lista_vercisulo[0][3])
             with open(os.path.join("templates","livro.txt"),"w",encoding="utf-8") as file:

@@ -4,10 +4,6 @@ import os
 class Historico:
     def __init__(self):
         self.path="historico"
-
-    def get_name_livro_all(self):
-        livros =open(os.path.join(self.path,"livro_ortografia_correta.txt"),"r",encoding="utf-8").read().strip().split("\n")
-        return livros
     def get_cargo_apresentador(self):
         cargos = open(os.path.join(self.path , "cargos.txt"),"r",encoding="utf-8").read().strip().split("\n")
         return cargos
@@ -37,7 +33,7 @@ class Historico:
         cargos = open(os.path.join(self.path, "cargos.txt"),"r",encoding="utf-8").read().strip().split("\n")
         if cargo in cargos:
             del cargos[cargos.index(cargo)]
-        with open(os.path.join(self.path, "cargos.txt"),"w") as info:
+        with open(os.path.join(self.path, "cargos.txt"),"w",encoding="utf-8") as info:
             for c in cargos:
                 info.write(c+"\n")
 

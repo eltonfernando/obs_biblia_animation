@@ -9,22 +9,20 @@ class OpenTxt():
         if not isfile(path):
             loger.warning("Arquivo %s não existe",path)
             return data
-
         with open(path,"r",encoding="utf-8") as file:
             data=file.read().strip().split("\n")
         print(data)
         loger.info("lendo")
     def write_data(self,path,line_data):
-        data=self.read_data(path)
-        if line_data in data:
-            print("exite",line_data)
-
-        with open(path,"a",encoding="utf-8") as info:
-            info.write(line_data+"\n")
+        try:
+            with open(path,"a",encoding="utf-8") as info:
+                info.write(line_data+"\n")
+        except Exception as eror:
+            loger.warning("erro ao escrever arquivo")
 
 if __name__=="__main__":
     txt=OpenTxt()
-    txt.read_data("./../historico/cargos.txt")
+    print(txt.read_data("./../historico/cargos.txt"))
    # logging.StreamHandler()
     #import time
     #time.sleep(10)
