@@ -25,7 +25,7 @@ class Historico:
         cargo = cargo.strip()
         path_file = os.path.join(self.path, "cargos.txt")
         get_cargos = self.get_cargo_apresentador()
-        if cargo in get_cargos:
+        if cargo.capitalize() in get_cargos:
             self.log.info(f'cargo {cargo} ja existe')
         else:
             OpenTxt().write_data(path_file, cargo.capitalize())
@@ -34,14 +34,14 @@ class Historico:
         name = name.strip()
         path_file = os.path.join(self.path, "people_names.txt")
         names = self.get_name_apresentador()
-        if name in names:
+        if name.capitalize() in names:
             self.log.info(f'cargo {name} ja existe')
         else:
             OpenTxt().write_data(path_file, name.capitalize())
 
     def delete_people_name(self, name):
         cargos = self.get_name_apresentador()
-        if name in cargos:
+        if name.capitalize() in cargos:
             del cargos[cargos.index(name)]
         with open(os.path.join(self.path, "people_names.txt"), "w", encoding="utf-8") as info:
             for c in cargos:
@@ -50,7 +50,7 @@ class Historico:
     def delete_cargo(self, cargo):
         cargos = self.get_cargo_apresentador()
 
-        if cargo in cargos:
+        if cargo.capitalize() in cargos:
             del cargos[cargos.index(cargo)]
         with open(os.path.join(self.path, "cargos.txt"), "w", encoding="utf-8") as info:
             for c in cargos:

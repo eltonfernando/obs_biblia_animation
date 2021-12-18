@@ -83,18 +83,18 @@ class Main(QMainWindow):
 
     @pyqtSlot()
     def on_pushButton_save_cargo_clicked(self):
-        cargo = self.comboBox_cargo.currentText()
+        cargo:str = self.comboBox_cargo.currentText()
         self.historico.set_cargo_apresentador(cargo)
         self.start_combox_cargo()
-        idex = self.comboBox_cargo.findText(cargo)
+        idex = self.comboBox_cargo.findText(cargo.capitalize())
         self.comboBox_cargo.setCurrentIndex(idex)
 
     @pyqtSlot()
     def on_pushButton_salve_people_clicked(self):
-        name = self.comboBox_name_apresentador.currentText()
+        name:str = self.comboBox_name_apresentador.currentText()
         self.historico.set_name_apresentador(name)
         self.start_combox_name_apresentador()
-        idex = self.comboBox_name_apresentador.findText(name)
+        idex = self.comboBox_name_apresentador.findText(name.capitalize())
         self.comboBox_name_apresentador.setCurrentIndex(idex)
 
     def update_template_html(self, livro, texto):
