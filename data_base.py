@@ -17,11 +17,6 @@ import datetime
 
 import logging
 
-logging.basicConfig(filename="loger.log",level=logging.CRITICAL,format='%(levelname)s:'
-                                                                   ' %(filename)s: '
-                                                                   '%(funcName)s:'
-                                                                   '%(asctime)s:'
-                                                                   '%(message)s')
 class Connect:
 
     def __init__(self,tabela="gn"):
