@@ -31,12 +31,12 @@ class Main(QMainWindow):
     def start_combox_name_apresentador(self):
         self.comboBox_name_apresentador.clear()
         for name_people in self.historico.get_name_apresentador():
-            self.comboBox_name_apresentador.addItem(name_people.capitalize())
+            self.comboBox_name_apresentador.addItem(name_people)
 
     def start_combox_cargo(self):
         self.comboBox_cargo.clear()
         for name_cargos in self.historico.get_cargo_apresentador():
-            self.comboBox_cargo.addItem(name_cargos.capitalize())
+            self.comboBox_cargo.addItem(name_cargos)
 
     def on_comboBox_livro_currentTextChanged(self, index):
         print("indes", index)
@@ -86,7 +86,7 @@ class Main(QMainWindow):
         cargo:str = self.comboBox_cargo.currentText()
         self.historico.set_cargo_apresentador(cargo)
         self.start_combox_cargo()
-        idex = self.comboBox_cargo.findText(cargo.capitalize())
+        idex = self.comboBox_cargo.findText(cargo)
         self.comboBox_cargo.setCurrentIndex(idex)
 
     @pyqtSlot()
@@ -94,7 +94,7 @@ class Main(QMainWindow):
         name:str = self.comboBox_name_apresentador.currentText()
         self.historico.set_name_apresentador(name)
         self.start_combox_name_apresentador()
-        idex = self.comboBox_name_apresentador.findText(name.capitalize())
+        idex = self.comboBox_name_apresentador.findText(name)
         self.comboBox_name_apresentador.setCurrentIndex(idex)
 
     def update_template_html(self, livro, texto):

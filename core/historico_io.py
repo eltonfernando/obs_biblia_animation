@@ -15,7 +15,6 @@ class OpenTxt():
             return data
         with open(path, "r", encoding="utf-8") as file:
             data = file.read().strip().split("\n")
-        print(data)
         loger.debug(f"lendo {path}")
         return data
 
