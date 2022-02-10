@@ -8,7 +8,7 @@ A aplicação permite inserir de forma rápida e simples os textos bíbilos e cr
 
  # Instalação
 Atualmente fornecemos versões compilada para Windows.
-https://drive.google.com/drive/folders/1lFkMeV0yZtnVIvgpDtntJxD01ia-ABn6?usp=sharing
+httpgie/folders/1lFkMeV0yZtnVIvgpDtntJxD01ia-ABn6?usp=sharing
  
 
 # Configuração

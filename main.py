@@ -15,12 +15,13 @@ from bs4 import BeautifulSoup
 import data_base
 from core.biblia_const import LIVRO_COMBO, LIVRO_DB, LIVRO_PT
 from memoria import Historico
-
+from setup import __VERSION__
 
 class Main(QMainWindow):
     def __init__(self):
         super(Main, self).__init__()
         loadUi("from.ui", self)
+        self.setWindowTitle(f"Bíblia para OBS {__VERSION__}")
         self.historico = Historico()
         self.start_combox_name_apresentador()
         self.start_combox_cargo()
